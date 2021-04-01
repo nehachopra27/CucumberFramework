@@ -1,0 +1,168 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-03-31T23:09:27.580Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3228000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Hooks.BeforeSteps()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "User is able to place an order for any item in catalog",
+        "description": "",
+        "id": "golden-path-for-user-checkout;user-is-able-to-place-an-order-for-any-item-in-catalog",
+        "after": [
+          {
+            "result": {
+              "duration": 145000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinitions.Hooks.AfterSteps()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3272000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User is on Home Page",
+            "match": {
+              "location": "stepDefinitions.HomePageSteps.user_is_on_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1613000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "he navigates to the Women Category",
+            "match": {
+              "location": "stepDefinitions.HomePageSteps.he_navigates_to_the_women_category()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1356000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "adds to cart the first available product on page",
+            "match": {
+              "location": "stepDefinitions.WomenProductPageSteps.adds_to_cart_the_first_available_product_on_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3038000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "moves to the checkout page",
+            "match": {
+              "location": "stepDefinitions.WomenProductPageSteps.moves_to_the_checkout_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1840000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "login as a existing user",
+            "match": {
+              "location": "stepDefinitions.CartSummaryPageSteps.login_as_a_existing_user(io.cucumber.datatable.DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "username",
+                  "test23@test.com"
+                ]
+              },
+              {
+                "cells": [
+                  "password",
+                  "test123"
+                ]
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 896000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "select existing address",
+            "match": {
+              "location": "stepDefinitions.CartSummaryPageSteps.select_existing_address()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 869000000,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "agrees to terms and conditions",
+            "match": {
+              "location": "stepDefinitions.CartSummaryPageSteps.agrees_to_terms_and_conditions()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2427000000,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "selects BankWire and complete checkout",
+            "match": {
+              "location": "stepDefinitions.CartSummaryPageSteps.selects_bank_wire_and_complete_checkout()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 22000000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "Product should be ordered",
+            "match": {
+              "location": "stepDefinitions.CartSummaryPageSteps.product_should_be_ordered()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Golden path for user checkout",
+    "description": "Description: This feature tests the complete product checkout flow on the e-commerce website.",
+    "id": "golden-path-for-user-checkout",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/functionalTests/Checkout.feature",
+    "tags": []
+  }
+]
