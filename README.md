@@ -5,4 +5,4 @@ A robust Cucumber framework to test a sample ecommerce website using context obj
 
 **Design PatternsUsed**: Page-Object Model, Singleton, Abstract Factory
 
-**To be Done:** Screemshot, Add Logging
+**To be Done:** Failure Screenshot, Add Logging
